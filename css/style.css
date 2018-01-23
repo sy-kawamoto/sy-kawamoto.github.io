@@ -1,0 +1,66 @@
+ 文字コードの設定 */
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	width: 1200px;
+	height: 800px;
+	background-color: #888;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	width: 960px;
+	height: 700px;
+	background-color: #eee;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header nav {
+	width: 100%;
+}
+
+header nav ul {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+header nav ul li {
+	width: 31.25%;
+	height: 300px;
+	display: block;
+}
+
+
+header nav ul li:nth-child(1) {
+	margin-left: 10px;
+	background-color: #F00;
+	height: 400px;
+}
+header nav ul li:nth-child(2) {
+	background-color: #0F0;
+}
+header nav ul li:nth-child(3) {
+	margin-right: 10px;
+	background-color: #00F;
+	height: 500px;
+}
+
+@media screen and (max-width:480px) {
+  body {
+  	width: 100vw;
+  	height: 100vh;
+  	background-color: #444;
+  }
+}
